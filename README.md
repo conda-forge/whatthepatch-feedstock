@@ -1,11 +1,11 @@
-About whatthepatch
-==================
+About whatthepatch-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/whatthepatch-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/cscorley/whatthepatch
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/whatthepatch-feedstock/blob/main/LICENSE.txt)
 
 Summary: What The Patch!? is a library for both parsing and applying patch files
 

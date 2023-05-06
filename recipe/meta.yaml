@@ -1,5 +1,5 @@
 {% set name = "whatthepatch" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e95c108087845b09258ddfaf82aa13cf83ba8319475117c0909754ca8b54d742
+  sha256: 7f374c172812581bc3763587525d14a143aac7fe4220bc4676ecce0d86cb8f08
 
 build:
   noarch: python
