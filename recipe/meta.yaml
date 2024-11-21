@@ -1,13 +1,13 @@
 {% set name = "whatthepatch" %}
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b274b3294784f78b1e759b35b49b7ef2e8473a580aabf39e5b94a9f901e5de61
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 9eefb4ebea5200408e02d413d2b4bc28daea6b78bb4b4d53431af7245f7d7edf
 
 build:
   noarch: python
@@ -16,15 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
+    - setuptools >=65.0.0
   run:
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   imports:
     - whatthepatch
   requires:
+    - python {{ python_min }}
     - pip
   commands:
     - pip check
